@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+:root{
+ --offcanvas-width:270px;
+ --topnav:56px;
+}
+
+.sidebar-nav{
+	width: var(--offcanvas-width);
+}
+.xa a{
+	font-size: 20px;
+	text-decoration: none;
+}
+.offcanvas{
+	background-color: black;
+}
+.xq{
+	width:100%;
+}
+
+/* .card{
+	border-radius:20px;
+	width:60%;
+	height:40vh;
+	margin:50px;
+	box-shadow: 5px 5px black;
+
+} */
+.xyz{
+    border-radius:20px;
+	width:60%;
+	height:40vh;
+	margin:50px;
+	box-shadow: 5px 5px black;
+
+}
+
+.card-body{
+	border:1px solid red;
+	border:none;
+	border-radius:20px;
+}
+.now
+{
+	font-size:50px;
+	font-weight: bold;
+	color:white;
+	margin-top: 20px;
+}
+.wl
+{
+	background-color:#DC143C;
+	 box-shadow: 5px 5px black;
+}
+
+nav{
+	background-image: linear-gradient(-65deg,white,black);
+	border-bottom: 1px solid black;
+
+}
+
+@media (min-width:992px)
+{
+	body{
+		overflow: auto;
+	}
+	main{
+		margin-left: var(--offcanvas-width);
+	}
+	.offcanvas-backdrop::before {
+		display:none;
+	}
+	.sidebar-nav{
+		transform: none;
+		visibility: visible !important;
+		top:var(--topnav);
+		height: calc(100%-topnav);
+	}
+}
+@media (max-width:767px)
+{
+	.card{
+		margin: 30px;
+	}
+	.qw{
+		margin-left: 180px;
+	}
+}
